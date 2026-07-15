@@ -1,0 +1,12 @@
+{
+    "task": {
+        "path": "."
+    },
+    "trial_name": "log-report__eguFvSP",
+    "trials_dir": "jobs/2026-07-15__02-44-17",
+    "environment": {
+        "type": "docker",
+        "delete": false
+    },
+    "job_id": "2998094a-ce32-401d-9e84-99ec9091b393"
+}

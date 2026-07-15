@@ -1,0 +1,93 @@
+{
+    "id": "477bba96-9033-49c6-bdec-7383d3cb6840",
+    "task_name": "dynamo/log-report",
+    "trial_name": "log-report__eguFvSP",
+    "trial_uri": "file:///mnt/e/Broken_harbor/log-report/jobs/2026-07-15__02-44-17/log-report__eguFvSP",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "0774bfbc0db93e48ed49a95164aaf2ab40b3801b06c85135bb1a6c49693ad10e",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "log-report__eguFvSP",
+        "trials_dir": "jobs/2026-07-15__02-44-17",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": false,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "2998094a-ce32-401d-9e84-99ec9091b393"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__egufvsp__env --project-directory /mnt/e/Broken_harbor/log-report/environment -f /tmp/tmp4lb1pc66/log-report__eguFvSP__env-docker-compose-resources.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpamfarvmt/docker-compose-mounts.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /tmp/tmp8j20tpjn/docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image log-report__egufvsp__env-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 564B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 178B 0.0s done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.11-slim\n#3 DONE 0.4s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 32B 0.0s done\n#5 DONE 0.0s\n\n#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6\n#6 resolve docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6 0.0s done\n#6 DONE 0.0s\n\n#7 [3/4] WORKDIR /app\n#7 CACHED\n\n#8 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5\n#8 CACHED\n\n#9 [4/4] COPY access.log /app/access.log\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:3ac798bbe1272dfb902bab1d32df87e399b1c0cd0bde7201383c2e791d998cee done\n#10 exporting config sha256:2c13c79efbcc8e9b347d7466d649a5eda9c5b2124ec21cdfd355455c47b843eb done\n#10 exporting attestation manifest sha256:e5591e8467fb50d84295ee62006f7a04df82015d2c2aef949575cf41de2d811b 0.0s done\n#10 exporting manifest list sha256:0d6b1ca423b75f09d7e3126990dda36d66eff67977ed4ff40eeb2d65458ec51f done\n#10 naming to docker.io/library/log-report__egufvsp__env-main:latest done\n#10 unpacking to docker.io/library/log-report__egufvsp__env-main:latest done\n#10 DONE 0.1s\n\n#11 resolving provenance for metadata file\n#11 DONE 0.0s\n Image log-report__egufvsp__env-main Built \n Network log-report__egufvsp__env_default Creating \n Network log-report__egufvsp__env_default Created \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Creating \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Created \n Container log-report__egufvsp__env-main-1 Creating \n Container log-report__egufvsp__env-main-1 Created \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Starting \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Started \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Waiting \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\ndependency failed to start: container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 exited (1)\n. Stderr: None. ",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 350, in run\n    await self._prepare()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 379, in _prepare\n    await self._setup_agent_environment()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 1097, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 1103, in _start_agent_environment\n    await asyncio.wait_for(\n  File \"/home/shouvik/miniconda3/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 882, in start\n    await self._run_docker_compose_command([\"up\", \"--detach\", \"--wait\"])\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 631, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__egufvsp__env --project-directory /mnt/e/Broken_harbor/log-report/environment -f /tmp/tmp4lb1pc66/log-report__eguFvSP__env-docker-compose-resources.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpamfarvmt/docker-compose-mounts.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /tmp/tmp8j20tpjn/docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image log-report__egufvsp__env-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 564B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 178B 0.0s done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.11-slim\n#3 DONE 0.4s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B 0.0s done\n#4 DONE 0.0s\n\n#5 [internal] load build context\n#5 transferring context: 32B 0.0s done\n#5 DONE 0.0s\n\n#6 [1/4] FROM docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6\n#6 resolve docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6 0.0s done\n#6 DONE 0.0s\n\n#7 [3/4] WORKDIR /app\n#7 CACHED\n\n#8 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5\n#8 CACHED\n\n#9 [4/4] COPY access.log /app/access.log\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:3ac798bbe1272dfb902bab1d32df87e399b1c0cd0bde7201383c2e791d998cee done\n#10 exporting config sha256:2c13c79efbcc8e9b347d7466d649a5eda9c5b2124ec21cdfd355455c47b843eb done\n#10 exporting attestation manifest sha256:e5591e8467fb50d84295ee62006f7a04df82015d2c2aef949575cf41de2d811b 0.0s done\n#10 exporting manifest list sha256:0d6b1ca423b75f09d7e3126990dda36d66eff67977ed4ff40eeb2d65458ec51f done\n#10 naming to docker.io/library/log-report__egufvsp__env-main:latest done\n#10 unpacking to docker.io/library/log-report__egufvsp__env-main:latest done\n#10 DONE 0.1s\n\n#11 resolving provenance for metadata file\n#11 DONE 0.0s\n Image log-report__egufvsp__env-main Built \n Network log-report__egufvsp__env_default Creating \n Network log-report__egufvsp__env_default Created \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Creating \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Created \n Container log-report__egufvsp__env-main-1 Creating \n Container log-report__egufvsp__env-main-1 Created \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Starting \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Started \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Waiting \n Container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\ndependency failed to start: container log-report__egufvsp__env-harbor-docker-egress-control-sidecar-1 exited (1)\n. Stderr: None. \n",
+        "occurred_at": "2026-07-15T02:44:30.020433"
+    },
+    "started_at": "2026-07-15T02:44:19.173292Z",
+    "finished_at": "2026-07-15T02:44:32.089177Z",
+    "environment_setup": {
+        "started_at": "2026-07-15T02:44:19.438834Z",
+        "finished_at": "2026-07-15T02:44:30.016972Z"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null,
+    "step_results": null
+}

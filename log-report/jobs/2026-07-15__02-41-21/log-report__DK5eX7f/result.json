@@ -1,0 +1,93 @@
+{
+    "id": "97e289bf-a0ef-497d-a5cb-3ad3524cbc22",
+    "task_name": "dynamo/log-report",
+    "trial_name": "log-report__DK5eX7f",
+    "trial_uri": "file:///mnt/e/Broken_harbor/log-report/jobs/2026-07-15__02-41-21/log-report__DK5eX7f",
+    "task_id": {
+        "path": "."
+    },
+    "source": null,
+    "task_checksum": "6aae9cece17d4249dbf6a12091c70074f10a32b3964dde759039f42410b1dbae",
+    "config": {
+        "task": {
+            "path": ".",
+            "git_url": null,
+            "git_commit_id": null,
+            "name": null,
+            "ref": null,
+            "overwrite": false,
+            "download_dir": null,
+            "source": null
+        },
+        "trial_name": "log-report__DK5eX7f",
+        "trials_dir": "jobs/2026-07-15__02-41-21",
+        "install_only": false,
+        "timeout_multiplier": 1.0,
+        "agent_timeout_multiplier": null,
+        "verifier_timeout_multiplier": null,
+        "agent_setup_timeout_multiplier": null,
+        "environment_build_timeout_multiplier": null,
+        "agent": {
+            "name": "oracle",
+            "import_path": null,
+            "model_name": null,
+            "n_concurrent": null,
+            "concurrency_group": null,
+            "skills": [],
+            "override_timeout_sec": null,
+            "override_setup_timeout_sec": null,
+            "max_timeout_sec": null,
+            "extra_allowed_hosts": [],
+            "kwargs": {},
+            "mcp_servers": []
+        },
+        "environment": {
+            "type": "docker",
+            "import_path": null,
+            "force_build": false,
+            "delete": true,
+            "cpu_enforcement_policy": "auto",
+            "memory_enforcement_policy": "auto",
+            "override_cpus": null,
+            "override_memory_mb": null,
+            "override_storage_mb": null,
+            "override_gpus": null,
+            "override_tpu": null,
+            "mounts": null,
+            "extra_docker_compose": [],
+            "kwargs": {},
+            "extra_allowed_hosts": []
+        },
+        "verifier": {
+            "override_timeout_sec": null,
+            "max_timeout_sec": null,
+            "disable": false
+        },
+        "artifacts": [],
+        "extra_instruction_paths": [],
+        "job_id": "a502ebfb-16e3-4bc4-84b5-a0ef01c5fa98"
+    },
+    "agent_info": {
+        "name": "oracle",
+        "version": "1.0.0",
+        "model_info": null
+    },
+    "agent_result": null,
+    "verifier_result": null,
+    "exception_info": {
+        "exception_type": "RuntimeError",
+        "exception_message": "Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__dk5ex7f__env --project-directory /mnt/e/Broken_harbor/log-report/environment -f /tmp/tmp8p8zpcep/log-report__DK5eX7f__env-docker-compose-resources.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpme4r9k7b/docker-compose-mounts.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /tmp/tmpye0f8imp/docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image log-report__dk5ex7f__env-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 564B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 178B 0.0s done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.11-slim\n#3 DONE 0.5s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B 0.0s done\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6\n#5 resolve docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6 0.0s done\n#5 DONE 0.0s\n\n#6 [internal] load build context\n#6 transferring context: 32B 0.0s done\n#6 DONE 0.0s\n\n#7 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5\n#7 CACHED\n\n#8 [3/4] WORKDIR /app\n#8 CACHED\n\n#9 [4/4] COPY access.log /app/access.log\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:74f8d365642eba328eac420ce9520e584bc3d3136987fe4012f902b77e1fecc8 done\n#10 exporting config sha256:b3edf4d0cdebf92cc861dcab7f6f53396278a1fcb8ad85e51d945bf620e60410 done\n#10 exporting attestation manifest sha256:8299e451693b648295fd41333e709f3f3a4547ad64dc2a0acbbe1970a357350f 0.0s done\n#10 exporting manifest list sha256:381ab12396ce95f7e074b1e065c813c2df08db8da03ccb494f6fd042dbb0d786\n#10 exporting manifest list sha256:381ab12396ce95f7e074b1e065c813c2df08db8da03ccb494f6fd042dbb0d786 done\n#10 naming to docker.io/library/log-report__dk5ex7f__env-main:latest done\n#10 unpacking to docker.io/library/log-report__dk5ex7f__env-main:latest done\n#10 DONE 0.1s\n\n#11 resolving provenance for metadata file\n#11 DONE 0.0s\n Image log-report__dk5ex7f__env-main Built \n Network log-report__dk5ex7f__env_default Creating \n Network log-report__dk5ex7f__env_default Created \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Creating \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Created \n Container log-report__dk5ex7f__env-main-1 Creating \n Container log-report__dk5ex7f__env-main-1 Created \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Starting \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Started \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Waiting \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\ndependency failed to start: container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 exited (1)\n. Stderr: None. ",
+        "exception_traceback": "Traceback (most recent call last):\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 350, in run\n    await self._prepare()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 379, in _prepare\n    await self._setup_agent_environment()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 1097, in _setup_agent_environment\n    await self._start_agent_environment()\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/trial.py\", line 1103, in _start_agent_environment\n    await asyncio.wait_for(\n  File \"/home/shouvik/miniconda3/lib/python3.12/asyncio/tasks.py\", line 520, in wait_for\n    return await fut\n           ^^^^^^^^^\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 882, in start\n    await self._run_docker_compose_command([\"up\", \"--detach\", \"--wait\"])\n  File \"/home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py\", line 631, in _run_docker_compose_command\n    raise RuntimeError(\nRuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name log-report__dk5ex7f__env --project-directory /mnt/e/Broken_harbor/log-report/environment -f /tmp/tmp8p8zpcep/log-report__DK5eX7f__env-docker-compose-resources.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpme4r9k7b/docker-compose-mounts.json -f /home/shouvik/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml -f /tmp/tmpye0f8imp/docker-compose-egress-control-services.json up --detach --wait. Return code: 1. Stdout:  Image log-report__dk5ex7f__env-main Building \n#1 [internal] load local bake definitions\n#1 reading from stdin 564B done\n#1 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 DONE 0.0s\n\n#2 [internal] load build definition from Dockerfile\n#2 transferring dockerfile: 178B 0.0s done\n#2 DONE 0.0s\n\n#3 [internal] load metadata for docker.io/library/python:3.11-slim\n#3 DONE 0.5s\n\n#4 [internal] load .dockerignore\n#4 transferring context: 2B 0.0s done\n#4 DONE 0.0s\n\n#5 [1/4] FROM docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6\n#5 resolve docker.io/library/python:3.11-slim@sha256:baf89808ec37adeaab83cec287adb4a2afa4a11c1d51e961c7ec737877e61af6 0.0s done\n#5 DONE 0.0s\n\n#6 [internal] load build context\n#6 transferring context: 32B 0.0s done\n#6 DONE 0.0s\n\n#7 [2/4] RUN pip install --no-cache-dir pytest==8.4.1 pytest-json-ctrf==0.3.5\n#7 CACHED\n\n#8 [3/4] WORKDIR /app\n#8 CACHED\n\n#9 [4/4] COPY access.log /app/access.log\n#9 CACHED\n\n#10 exporting to image\n#10 exporting layers done\n#10 exporting manifest sha256:74f8d365642eba328eac420ce9520e584bc3d3136987fe4012f902b77e1fecc8 done\n#10 exporting config sha256:b3edf4d0cdebf92cc861dcab7f6f53396278a1fcb8ad85e51d945bf620e60410 done\n#10 exporting attestation manifest sha256:8299e451693b648295fd41333e709f3f3a4547ad64dc2a0acbbe1970a357350f 0.0s done\n#10 exporting manifest list sha256:381ab12396ce95f7e074b1e065c813c2df08db8da03ccb494f6fd042dbb0d786\n#10 exporting manifest list sha256:381ab12396ce95f7e074b1e065c813c2df08db8da03ccb494f6fd042dbb0d786 done\n#10 naming to docker.io/library/log-report__dk5ex7f__env-main:latest done\n#10 unpacking to docker.io/library/log-report__dk5ex7f__env-main:latest done\n#10 DONE 0.1s\n\n#11 resolving provenance for metadata file\n#11 DONE 0.0s\n Image log-report__dk5ex7f__env-main Built \n Network log-report__dk5ex7f__env_default Creating \n Network log-report__dk5ex7f__env_default Created \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Creating \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Created \n Container log-report__dk5ex7f__env-main-1 Creating \n Container log-report__dk5ex7f__env-main-1 Created \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Starting \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Started \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Waiting \n Container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 Error dependency harbor-docker-egress-control-sidecar failed to start\ndependency failed to start: container log-report__dk5ex7f__env-harbor-docker-egress-control-sidecar-1 exited (1)\n. Stderr: None. \n",
+        "occurred_at": "2026-07-15T02:41:53.565323"
+    },
+    "started_at": "2026-07-15T02:41:24.165120Z",
+    "finished_at": "2026-07-15T02:41:55.774647Z",
+    "environment_setup": {
+        "started_at": "2026-07-15T02:41:24.382175Z",
+        "finished_at": "2026-07-15T02:41:53.561683Z"
+    },
+    "agent_setup": null,
+    "agent_execution": null,
+    "verifier": null,
+    "step_results": null
+}

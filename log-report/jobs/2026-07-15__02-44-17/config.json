@@ -1,0 +1,13 @@
+{
+    "job_name": "2026-07-15__02-44-17",
+    "debug": true,
+    "environment": {
+        "type": "docker",
+        "delete": false
+    },
+    "tasks": [
+        {
+            "path": "."
+        }
+    ]
+}
